@@ -35,4 +35,12 @@ emergencyBtn.addEventListener('click', function() {
             i--;
         } 
     }
+    // display reload btn
+    document.getElementById('reload-btn').style.display = 'block'
+    emergencyBtn.style.display = 'none'
+})
+
+// + Ajouter un btn pour recharger la page
+document.getElementById('reload-btn').addEventListener('click', function() {
+    document.location.reload(true)
 })

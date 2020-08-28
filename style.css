@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #2c3e50;
+  font-family: Helvetica;
 }
 
 #header {
@@ -9,12 +10,21 @@ body {
   text-align: center;
 }
 
+.footer {
+  position: relative;
+  width: 100%;
+}
+.footer p {
+  color: #fcf0f1;
+  text-align: center;
+}
+
 h1 {
-  margin: 0;
+  margin: 1em 0;
   padding: 0;
   color: #fcf0f1;
   font-size: 60px;
-  font-family: Helvetica;
+  
 }
 
 #container {
@@ -67,7 +77,7 @@ h1 {
   font-family: monospace;
 }
 
-#emergency-btn {
+#emergency-btn, #reload-btn {
   display: block;
   margin: 3em auto;
   padding: 1em;
@@ -78,7 +88,8 @@ h1 {
   font-weight: bold;
 }
 
-#emergency-btn:hover {
+#emergency-btn:hover,
+#reload-btn:hover {
   background-color:red;
   border: white solid 1px;
   color: white;
